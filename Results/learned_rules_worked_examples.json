@@ -1,0 +1,524 @@
+{
+  "env": "CartPole-v1",
+  "train_episodes": 500,
+  "train_seed": 0,
+  "final50_train_return": 482.0,
+  "n_rules_total": 324,
+  "examples": [
+    {
+      "raw_state": [
+        0.027882501482963562,
+        -0.032775137573480606,
+        0.021357279270887375,
+        0.025033507496118546
+      ],
+      "per_dimension_membership": [
+        {
+          "dimension": "cart position",
+          "raw_value": 0.027882501482963562,
+          "clipped_value": 0.027882501482963562,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.9994492490199458
+            },
+            {
+              "set_center": 2.4,
+              "membership_degree": 0.018548893981555677
+            }
+          ]
+        },
+        {
+          "dimension": "cart velocity",
+          "raw_value": -0.032775137573480606,
+          "clipped_value": -0.032775137573480606,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.9995129487418861
+            },
+            {
+              "set_center": -3.0,
+              "membership_degree": 0.01844548276333992
+            }
+          ]
+        },
+        {
+          "dimension": "pole angle",
+          "raw_value": 0.021357279270887375,
+          "clipped_value": 0.021357279270887375,
+          "dominant_sets": [
+            {
+              "set_center": 0.04200000000000001,
+              "membership_degree": 0.7815347797269295
+            },
+            {
+              "set_center": -0.04200000000000001,
+              "membership_degree": 0.09807400125590425
+            }
+          ]
+        },
+        {
+          "dimension": "pole angular velocity",
+          "raw_value": 0.025033507496118546,
+          "clipped_value": 0.025033507496118546,
+          "dominant_sets": [
+            {
+              "set_center": 0.6999999999999993,
+              "membership_degree": 0.3872328030027501
+            },
+            {
+              "set_center": -0.7000000000000002,
+              "membership_degree": 0.33464092676688717
+            }
+          ]
+        }
+      ],
+      "top_firing_rules": [
+        {
+          "rule_index": 165,
+          "firing_strength": 0.4448430210903772,
+          "q_push_left": 102.65178659716761,
+          "q_push_right": 100.28319873068938
+        },
+        {
+          "rule_index": 164,
+          "firing_strength": 0.38442683494044944,
+          "q_push_left": 104.4560130063615,
+          "q_push_right": 105.13733155418778
+        },
+        {
+          "rule_index": 159,
+          "firing_strength": 0.055822896358293204,
+          "q_push_left": 106.00288319247335,
+          "q_push_right": 106.08199977046212
+        },
+        {
+          "rule_index": 158,
+          "firing_strength": 0.048241330866844095,
+          "q_push_left": 103.82742738749963,
+          "q_push_right": 103.05325074164485
+        }
+      ],
+      "blended_q_values": {
+        "push_left": 98.2187282912402,
+        "push_right": 98.00549148037489
+      },
+      "selected_action": "push cart left",
+      "n_rules_total": 324,
+      "n_rules_firing_above_0.01": 4
+    },
+    {
+      "raw_state": [
+        0.044112175703048706,
+        -0.043558865785598755,
+        0.025976449251174927,
+        0.26296916604042053
+      ],
+      "per_dimension_membership": [
+        {
+          "dimension": "cart position",
+          "raw_value": 0.044112175703048706,
+          "clipped_value": 0.044112175703048706,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.9986220641401268
+            },
+            {
+              "set_center": 2.4,
+              "membership_degree": 0.019585414945378007
+            }
+          ]
+        },
+        {
+          "dimension": "cart velocity",
+          "raw_value": -0.043558865785598755,
+          "clipped_value": -0.043558865785598755,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.999139882680705
+            },
+            {
+              "set_center": -3.0,
+              "membership_degree": 0.018987667024540168
+            }
+          ]
+        },
+        {
+          "dimension": "pole angle",
+          "raw_value": 0.025976449251174927,
+          "clipped_value": 0.025976449251174927,
+          "dominant_sets": [
+            {
+              "set_center": 0.04200000000000001,
+              "membership_degree": 0.8619804316872648
+            },
+            {
+              "set_center": -0.04200000000000001,
+              "membership_degree": 0.0690476120366016
+            }
+          ]
+        },
+        {
+          "dimension": "pole angular velocity",
+          "raw_value": 0.26296916604042053,
+          "clipped_value": 0.26296916604042053,
+          "dominant_sets": [
+            {
+              "set_center": 0.6999999999999993,
+              "membership_degree": 0.6718350010410062
+            },
+            {
+              "set_center": -0.7000000000000002,
+              "membership_degree": 0.14499001373681714
+            }
+          ]
+        }
+      ],
+      "top_firing_rules": [
+        {
+          "rule_index": 165,
+          "firing_strength": 0.7090300416302614,
+          "q_push_left": 102.65178659716761,
+          "q_push_right": 100.28319873068938
+        },
+        {
+          "rule_index": 164,
+          "firing_strength": 0.1530171475384519,
+          "q_push_left": 104.4560130063615,
+          "q_push_right": 105.13733155418778
+        },
+        {
+          "rule_index": 159,
+          "firing_strength": 0.056795757115915384,
+          "q_push_left": 106.00288319247335,
+          "q_push_right": 106.08199977046212
+        },
+        {
+          "rule_index": 273,
+          "firing_strength": 0.013905808886792971,
+          "q_push_left": -20.878309697303205,
+          "q_push_right": 9.047940041789435
+        }
+      ],
+      "blended_q_values": {
+        "push_left": 96.92240228971623,
+        "push_right": 96.45817932353722
+      },
+      "selected_action": "push cart left",
+      "n_rules_total": 324,
+      "n_rules_firing_above_0.01": 8
+    },
+    {
+      "raw_state": [
+        0.12565797567367554,
+        0.3332445025444031,
+        0.03388461470603943,
+        -0.026037294417619705
+      ],
+      "per_dimension_membership": [
+        {
+          "dimension": "cart position",
+          "raw_value": 0.12565797567367554,
+          "clipped_value": 0.12565797567367554,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.9888733570040347
+            },
+            {
+              "set_center": 2.4,
+              "membership_degree": 0.025593584108719227
+            }
+          ]
+        },
+        {
+          "dimension": "cart velocity",
+          "raw_value": 0.3332445025444031,
+          "clipped_value": 0.3332445025444031,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.9508835511493151
+            },
+            {
+              "set_center": 3.0,
+              "membership_degree": 0.03974749082339675
+            }
+          ]
+        },
+        {
+          "dimension": "pole angle",
+          "raw_value": 0.03388461470603943,
+          "clipped_value": 0.03388461470603943,
+          "dominant_sets": [
+            {
+              "set_center": 0.04200000000000001,
+              "membership_degree": 0.9626193213597479
+            },
+            {
+              "set_center": -0.04200000000000001,
+              "membership_degree": 0.03575508714589232
+            }
+          ]
+        },
+        {
+          "dimension": "pole angular velocity",
+          "raw_value": -0.026037294417619705,
+          "clipped_value": -0.026037294417619705,
+          "dominant_sets": [
+            {
+              "set_center": -0.7000000000000002,
+              "membership_degree": 0.3883262383626515
+            },
+            {
+              "set_center": 0.6999999999999993,
+              "membership_degree": 0.33362741559587294
+            }
+          ]
+        }
+      ],
+      "top_firing_rules": [
+        {
+          "rule_index": 164,
+          "firing_strength": 0.473338254227488,
+          "q_push_left": 104.4560130063615,
+          "q_push_right": 105.13733155418778
+        },
+        {
+          "rule_index": 165,
+          "firing_strength": 0.40666481648634184,
+          "q_push_left": 102.65178659716761,
+          "q_push_right": 100.28319873068938
+        },
+        {
+          "rule_index": 200,
+          "firing_strength": 0.019785816984140253,
+          "q_push_left": 38.15139468215712,
+          "q_push_right": 18.276386421805586
+        },
+        {
+          "rule_index": 158,
+          "firing_strength": 0.017581457336096284,
+          "q_push_left": 103.82742738749963,
+          "q_push_right": 103.05325074164485
+        }
+      ],
+      "blended_q_values": {
+        "push_left": 96.78631537580729,
+        "push_right": 96.1546415804389
+      },
+      "selected_action": "push cart left",
+      "n_rules_total": 324,
+      "n_rules_firing_above_0.01": 8
+    },
+    {
+      "raw_state": [
+        0.27153050899505615,
+        0.7081706523895264,
+        0.06692375987768173,
+        -0.2742463946342468
+      ],
+      "per_dimension_membership": [
+        {
+          "dimension": "cart position",
+          "raw_value": 0.27153050899505615,
+          "clipped_value": 0.27153050899505615,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.949095856924929
+            },
+            {
+              "set_center": 2.4,
+              "membership_degree": 0.040344307578633366
+            }
+          ]
+        },
+        {
+          "dimension": "cart velocity",
+          "raw_value": 0.7081706523895264,
+          "clipped_value": 0.7081706523895264,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.7965700434363512
+            },
+            {
+              "set_center": 3.0,
+              "membership_degree": 0.09235846678623943
+            }
+          ]
+        },
+        {
+          "dimension": "pole angle",
+          "raw_value": 0.06692375987768173,
+          "clipped_value": 0.06692375987768173,
+          "dominant_sets": [
+            {
+              "set_center": 0.04200000000000001,
+              "membership_degree": 0.6981387368504121
+            },
+            {
+              "set_center": 0.12599999999999997,
+              "membership_degree": 0.13280996770515935
+            }
+          ]
+        },
+        {
+          "dimension": "pole angular velocity",
+          "raw_value": -0.2742463946342468,
+          "clipped_value": -0.2742463946342468,
+          "dominant_sets": [
+            {
+              "set_center": -0.7000000000000002,
+              "membership_degree": 0.685586575557615
+            },
+            {
+              "set_center": 0.6999999999999993,
+              "membership_degree": 0.13854157271937348
+            }
+          ]
+        }
+      ],
+      "top_firing_rules": [
+        {
+          "rule_index": 164,
+          "firing_strength": 0.5941700596698964,
+          "q_push_left": 104.4560130063615,
+          "q_push_right": 105.13733155418778
+        },
+        {
+          "rule_index": 165,
+          "firing_strength": 0.12006835819747419,
+          "q_push_left": 102.65178659716761,
+          "q_push_right": 100.28319873068938
+        },
+        {
+          "rule_index": 170,
+          "firing_strength": 0.1130315541465789,
+          "q_push_left": 97.00446389906125,
+          "q_push_right": 110.31106790828483
+        },
+        {
+          "rule_index": 200,
+          "firing_strength": 0.06889116176735169,
+          "q_push_left": 38.15139468215712,
+          "q_push_right": 18.276386421805586
+        }
+      ],
+      "blended_q_values": {
+        "push_left": 90.56170032725247,
+        "push_right": 92.08409938818829
+      },
+      "selected_action": "push cart right",
+      "n_rules_total": 324,
+      "n_rules_firing_above_0.01": 8
+    },
+    {
+      "raw_state": [
+        0.536299467086792,
+        0.6931852698326111,
+        0.04458016902208328,
+        0.05704035237431526
+      ],
+      "per_dimension_membership": [
+        {
+          "dimension": "cart position",
+          "raw_value": 0.536299467086792,
+          "clipped_value": 0.536299467086792,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.8156170657578891
+            },
+            {
+              "set_center": 2.4,
+              "membership_degree": 0.08532437389063105
+            }
+          ]
+        },
+        {
+          "dimension": "cart velocity",
+          "raw_value": 0.6931852698326111,
+          "clipped_value": 0.6931852698326111,
+          "dominant_sets": [
+            {
+              "set_center": 0.0,
+              "membership_degree": 0.8041926123541775
+            },
+            {
+              "set_center": 3.0,
+              "membership_degree": 0.08951664416760169
+            }
+          ]
+        },
+        {
+          "dimension": "pole angle",
+          "raw_value": 0.04458016902208328,
+          "clipped_value": 0.04458016902208328,
+          "dominant_sets": [
+            {
+              "set_center": 0.04200000000000001,
+              "membership_degree": 0.9961564220355583
+            },
+            {
+              "set_center": 0.12599999999999997,
+              "membership_degree": 0.021606991249111543
+            }
+          ]
+        },
+        {
+          "dimension": "pole angular velocity",
+          "raw_value": 0.05704035237431526,
+          "clipped_value": 0.05704035237431526,
+          "dominant_sets": [
+            {
+              "set_center": 0.6999999999999993,
+              "membership_degree": 0.42278763378567313
+            },
+            {
+              "set_center": -0.7000000000000002,
+              "membership_degree": 0.3031637832781872
+            }
+          ]
+        }
+      ],
+      "top_firing_rules": [
+        {
+          "rule_index": 165,
+          "firing_strength": 0.45613601661606595,
+          "q_push_left": 102.65178659716761,
+          "q_push_right": 100.28319873068938
+        },
+        {
+          "rule_index": 164,
+          "firing_strength": 0.327076549634538,
+          "q_push_left": 104.4560130063615,
+          "q_push_right": 105.13733155418778
+        },
+        {
+          "rule_index": 201,
+          "firing_strength": 0.05077361426128689,
+          "q_push_left": -13.76539292382376,
+          "q_push_right": -36.909370255361445
+        },
+        {
+          "rule_index": 273,
+          "firing_strength": 0.047717883380195635,
+          "q_push_left": -20.878309697303205,
+          "q_push_right": 9.047940041789435
+        }
+      ],
+      "blended_q_values": {
+        "push_left": 84.95819738876325,
+        "push_right": 84.98519302946823
+      },
+      "selected_action": "push cart right",
+      "n_rules_total": 324,
+      "n_rules_firing_above_0.01": 6
+    }
+  ]
+}

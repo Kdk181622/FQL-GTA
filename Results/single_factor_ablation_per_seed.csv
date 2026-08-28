@@ -1,0 +1,16 @@
+variant,label,seed,avg_reward,trailing50_return,std_reward,solved,train_time_sec
+baseline,Baseline,0,22.2225,70.86,33.54926219382477,False,3.019439220428467
+baseline,Baseline,1,16.4675,27.48,7.681727914343231,False,1.8148047924041748
+baseline,Baseline,2,97.165,119.78,36.58569085038575,False,10.589979410171509
+gaussian_only,+ Gaussian MF only,0,59.86,213.24,83.94575867785102,False,6.23918080329895
+gaussian_only,+ Gaussian MF only,1,78.3275,248.28,100.29815673156712,False,7.227632761001587
+gaussian_only,+ Gaussian MF only,2,144.6375,229.4,64.51593674240497,False,20.46179437637329
+eligibility_only,+ Eligibility Trace only,0,34.0525,155.46,60.55835816590473,False,4.967862367630005
+eligibility_only,+ Eligibility Trace only,1,16.585,31.0,8.896503526667091,False,1.7109084129333496
+eligibility_only,+ Eligibility Trace only,2,15.28,26.42,7.461675415079378,False,1.9688127040863037
+adaptive_eps_only,+ Adaptive epsilon only,0,42.6725,169.44,66.28480401834193,False,4.7620015144348145
+adaptive_eps_only,+ Adaptive epsilon only,1,110.3725,256.88,120.018680811572,False,11.685170650482178
+adaptive_eps_only,+ Adaptive epsilon only,2,58.64,218.46,96.4419276041287,False,5.8055739402771
+full_gta,Full FQL-GTA (all three),0,420.015,461.08,129.1985478827065,False,39.94854235649109
+full_gta,Full FQL-GTA (all three),1,283.225,482.24,201.10654980631537,True,26.415093898773193
+full_gta,Full FQL-GTA (all three),2,213.3525,486.22,196.197510799067,True,20.332788944244385

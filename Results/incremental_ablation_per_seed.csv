@@ -1,0 +1,13 @@
+variant,label,seed,final_reward,avg_reward,train_time_sec
+baseline,Baseline FQL,0,70.86,22.2225,2.451767683029175
+baseline,Baseline FQL,1,27.48,16.4675,2.544471502304077
+baseline,Baseline FQL,2,119.78,97.165,9.580490350723267
+gaussian_only,+ Gaussian MF,0,213.24,59.86,5.819293737411499
+gaussian_only,+ Gaussian MF,1,248.28,78.3275,7.131594657897949
+gaussian_only,+ Gaussian MF,2,229.4,144.6375,14.612725257873535
+gaussian_eligibility,+ Eligibility Traces,0,397.5,135.5425,12.270601034164429
+gaussian_eligibility,+ Eligibility Traces,1,458.16,172.1225,16.53460693359375
+gaussian_eligibility,+ Eligibility Traces,2,408.82,183.54,17.439537286758423
+full_gta,+ Adaptive epsilon (Full FQL-GTA),0,461.08,420.015,38.80264186859131
+full_gta,+ Adaptive epsilon (Full FQL-GTA),1,482.24,283.225,26.838817596435547
+full_gta,+ Adaptive epsilon (Full FQL-GTA),2,486.22,213.3525,20.0399649143219

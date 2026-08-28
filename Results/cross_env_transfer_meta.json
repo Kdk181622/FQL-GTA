@@ -1,0 +1,46 @@
+{
+  "target_envs": [
+    "MountainCar-v0",
+    "Acrobot-v1"
+  ],
+  "eval_seeds": [
+    0,
+    1,
+    2
+  ],
+  "validation_seed": 99,
+  "episodes_per_seed": 400,
+  "cartpole_tuned_defaults": {
+    "lam": 0.5,
+    "sigma_mult": 0.35,
+    "epsilon_decay": 0.99
+  },
+  "sweep_order": [
+    "lam",
+    "sigma_mult",
+    "epsilon_decay"
+  ],
+  "sweeps": {
+    "lam": [
+      0.0,
+      0.3,
+      0.5,
+      0.7,
+      0.9,
+      0.99
+    ],
+    "sigma_mult": [
+      0.2,
+      0.35,
+      0.5,
+      0.7
+    ],
+    "epsilon_decay": [
+      0.9,
+      0.95,
+      0.99,
+      0.995,
+      0.999
+    ]
+  }
+}

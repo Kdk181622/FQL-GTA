@@ -1,0 +1,56 @@
+{
+  "Baseline FQL": {
+    "final_return_mean": 265.6986666666667,
+    "final_return_std": 41.17252982212804,
+    "final_return_median": 278.68,
+    "final_return_iqr": [
+      268.49,
+      286.775
+    ],
+    "final_return_min": 133.2,
+    "final_return_max": 307.32,
+    "final_return_95ci": [
+      250.32459136522823,
+      281.0727419681052
+    ],
+    "best_return_mean": 474.53333333333336,
+    "auc_mean": 118.23986666666666,
+    "auc_std": 22.480993160864816,
+    "auc_95ci": [
+      109.84532585998286,
+      126.63440747335045
+    ],
+    "solved_rate": 0.0,
+    "n_seeds_solved": 0,
+    "n_seeds_total": 30,
+    "median_episodes_to_solve": null,
+    "ever_crossed_threshold_rate": 0.0
+  },
+  "Improved FQL-GTA": {
+    "final_return_mean": 423.07733333333334,
+    "final_return_std": 78.67067327805825,
+    "final_return_median": 450.09000000000003,
+    "final_return_iqr": [
+      381.33,
+      478.66499999999996
+    ],
+    "final_return_min": 220.1,
+    "final_return_max": 499.88,
+    "final_return_95ci": [
+      393.7012211484149,
+      452.4534455182518
+    ],
+    "best_return_mean": 493.6333333333333,
+    "auc_mean": 293.55053333333336,
+    "auc_std": 60.94918445763303,
+    "auc_95ci": [
+      270.7917338264518,
+      316.30933284021495
+    ],
+    "solved_rate": 0.4,
+    "n_seeds_solved": 12,
+    "n_seeds_total": 30,
+    "median_episodes_to_solve": 330.0,
+    "ever_crossed_threshold_rate": 0.8
+  }
+}

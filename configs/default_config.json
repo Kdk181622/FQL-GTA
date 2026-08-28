@@ -1,0 +1,71 @@
+{
+  "_comment": "Frozen experimental configuration v1.0 for the journal submission. Every script in src/ reads or matches these values so that code, notebook, CSV/JSON results, figures, manuscript, PPT, and video all agree. This file is the single source of truth for hyperparameters -- if a number in the manuscript disagrees with this file, the file is authoritative and the manuscript has a bug.",
+  "version": "v1.0",
+  "environment": {
+    "primary": "CartPole-v1",
+    "transfer_targets": ["MountainCar-v0", "Acrobot-v1"],
+    "gymnasium_version": "see requirements.txt"
+  },
+  "baseline_fql": {
+    "alpha": 0.3,
+    "gamma": 0.99,
+    "epsilon": 0.1,
+    "epsilon_schedule": "fixed (no decay)",
+    "membership_functions": "triangular",
+    "n_rules_cartpole": 324,
+    "sets_per_dim_cartpole": [3, 3, 6, 6]
+  },
+  "fql_gta_proposed": {
+    "alpha": 0.2,
+    "gamma": 0.99,
+    "epsilon_start": 0.5,
+    "epsilon_min": 0.005,
+    "epsilon_decay": 0.99,
+    "lambda_eligibility_trace": 0.5,
+    "membership_functions": "Gaussian",
+    "sigma_mult": 0.35,
+    "n_rules_cartpole": 324,
+    "sets_per_dim_cartpole": [3, 3, 6, 6]
+  },
+  "primary_comparison": {
+    "seeds": "0-29 (30 independent seeds)",
+    "n_seeds": 30,
+    "episodes_per_seed": 500,
+    "solve_threshold": 475.0,
+    "solve_window_episodes": 50,
+    "solved_definition": "trailing-50-episode mean at the FINAL episode >= solve_threshold (not merely ever crossing it)"
+  },
+  "ablation_study": {
+    "design": "full 2^3 factorial (Gaussian MF x eligibility trace x adaptive epsilon), 8 configurations",
+    "seeds": [0, 1, 2],
+    "episodes_per_seed": 400,
+    "multiple_comparison_correction": "Holm, applied to all pairwise post-hoc comparisons across the 8 configurations"
+  },
+  "hyperparameter_sensitivity": {
+    "lambda_sweep": [0.0, 0.3, 0.5, 0.7, 0.9, 0.99],
+    "sigma_mult_sweep": [0.2, 0.35, 0.5, 0.7],
+    "epsilon_decay_sweep": [0.90, 0.95, 0.99, 0.995, 0.999],
+    "seeds": [0, 1, 2, 3, 4]
+  },
+  "cross_environment_transfer": {
+    "zero_shot": "CartPole-tuned hyperparameters applied directly, no retuning",
+    "tuned": "lambda, sigma_mult, epsilon_decay retuned per environment via the same sensitivity-sweep protocol",
+    "seeds": [0, 1, 2],
+    "episodes_per_seed": 400
+  },
+  "rl_baselines": {
+    "dqn_handrolled": {"architecture": "MLP 4->64->64->2, ReLU, target network synced every 10 episodes",
+                        "episodes_per_seed": 500,
+                        "note": "included as a real, measured computational-cost reference point, not the primary accuracy baseline"},
+    "dqn_stable_baselines3": {"library": "stable-baselines3", "policy": "MlpPolicy", "total_timesteps": 60000},
+    "ppo_stable_baselines3": {"library": "stable-baselines3", "policy": "MlpPolicy", "total_timesteps": 60000},
+    "sb3_budget_rationale": "60,000 environment steps is the same order of magnitude as the FQL-GTA agent's own total-step budget over its 500-episode training run, and is standard practice for solving CartPole-v1 with SB3's default hyperparameters. Per-episode returns for SB3 agents are recovered from a Monitor wrapper and scored under the identical trailing-50-episode solved definition used for FQL, for comparability.",
+    "seeds": "0-9 (10 seeds; smaller than the primary FQL comparison's 30 given the added compute of two additional deep-RL algorithms)"
+  },
+  "software_environment": {
+    "python_version": "3.10.11",
+    "os": "Windows 11",
+    "hardware": "consumer-grade CPU, no GPU required",
+    "key_packages": "see requirements.txt / environment.yml for pinned minimum versions"
+  }
+}

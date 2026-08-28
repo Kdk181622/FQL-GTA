@@ -1,0 +1,143 @@
+{
+  "primary_comparison": {
+    "n_seeds": 30,
+    "cohens_d_trailing50_return": 2.5065744567744006,
+    "wilcoxon_statistic": 7.0,
+    "wilcoxon_p_value": 3.5390257835388184e-08,
+    "paired_ttest_statistic": -10.069943476362276,
+    "paired_ttest_p_value": 5.633211929514468e-11,
+    "shapiro_wilk_baseline": {
+      "statistic": 0.6720073524616453,
+      "p_value": 6.261131681675387e-07
+    },
+    "shapiro_wilk_gta": {
+      "statistic": 0.845358379105053,
+      "p_value": 0.0004964776106464018
+    },
+    "bootstrap_95ci_baseline": [
+      250.30391666666665,
+      278.52746666666667
+    ],
+    "bootstrap_95ci_gta": [
+      394.1965333333333,
+      448.9416999999999
+    ],
+    "n_pairs": 30
+  },
+  "ablation_per_condition": {
+    "Off / Off / Off (baseline FQL)": {
+      "n_seeds": 3,
+      "mean": 45.285000000000004,
+      "std": 45.02144829134221,
+      "shapiro_wilk_statistic": 0.8031954625893141,
+      "shapiro_wilk_p_value": 0.12214997267060046,
+      "bootstrap_95ci": [
+        16.4675,
+        97.165
+      ]
+    },
+    "Off / Off / On": {
+      "n_seeds": 3,
+      "mean": 70.56166666666667,
+      "std": 35.38950553601072,
+      "shapiro_wilk_statistic": 0.9148888961145466,
+      "shapiro_wilk_p_value": 0.4345986442756461,
+      "bootstrap_95ci": [
+        42.67249999999999,
+        110.3725
+      ]
+    },
+    "Off / On / Off": {
+      "n_seeds": 3,
+      "mean": 21.9725,
+      "std": 10.481915676535468,
+      "shapiro_wilk_statistic": 0.8018680533666634,
+      "shapiro_wilk_p_value": 0.11896579700569387,
+      "bootstrap_95ci": [
+        15.28,
+        34.0525
+      ]
+    },
+    "Off / On / On": {
+      "n_seeds": 3,
+      "mean": 146.4525,
+      "std": 19.758981343935726,
+      "shapiro_wilk_statistic": 0.8554323478361099,
+      "shapiro_wilk_p_value": 0.25508854935716263,
+      "bootstrap_95ci": [
+        132.515,
+        169.065
+      ]
+    },
+    "On / Off / Off": {
+      "n_seeds": 3,
+      "mean": 94.27499999999999,
+      "std": 44.58192676130092,
+      "shapiro_wilk_statistic": 0.904031475670727,
+      "shapiro_wilk_p_value": 0.39845176618195133,
+      "bootstrap_95ci": [
+        59.85999999999999,
+        144.6375
+      ]
+    },
+    "On / Off / On": {
+      "n_seeds": 3,
+      "mean": 100.02666666666666,
+      "std": 13.6794849440077,
+      "shapiro_wilk_statistic": 0.9895031804603589,
+      "shapiro_wilk_p_value": 0.8039833468664368,
+      "bootstrap_95ci": [
+        85.61,
+        112.825
+      ]
+    },
+    "On / On / Off": {
+      "n_seeds": 3,
+      "mean": 163.73499999999999,
+      "std": 25.073943023585265,
+      "shapiro_wilk_statistic": 0.9160769883662903,
+      "shapiro_wilk_p_value": 0.43867739132035,
+      "bootstrap_95ci": [
+        135.5425,
+        183.54
+      ]
+    },
+    "On / On / On (full FQL-GTA)": {
+      "n_seeds": 3,
+      "mean": 305.5308333333333,
+      "std": 105.12140541813228,
+      "shapiro_wilk_statistic": 0.966231182572426,
+      "shapiro_wilk_p_value": 0.6470327486247511,
+      "bootstrap_95ci": [
+        213.3525,
+        420.01500000000004
+      ]
+    }
+  },
+  "ablation_normality_note": "Shapiro-Wilk run on n=3 seeds per condition has very low power; treat these as descriptive, not a reliable normality gate. Bootstrap CIs and the non-parametric Friedman/Wilcoxon tests below are the primary evidence for this reason.",
+  "ablation_anova": {
+    "f_statistic": 10.832405807682205,
+    "p_value": 4.9575840391889114e-05,
+    "n_groups": 8,
+    "labels": [
+      "Off / Off / Off (baseline FQL)",
+      "Off / Off / On",
+      "Off / On / Off",
+      "Off / On / On",
+      "On / Off / Off",
+      "On / Off / On",
+      "On / On / Off",
+      "On / On / On (full FQL-GTA)"
+    ]
+  },
+  "friedman_test": {
+    "statistic": 18.33333333333333,
+    "p_value": 0.010553253420284094,
+    "n_conditions": 8,
+    "n_blocks_seeds": 3
+  },
+  "ablation_pairwise_holm_summary": {
+    "n_pairs_tested": 28,
+    "n_significant_after_holm": 0
+  }
+}

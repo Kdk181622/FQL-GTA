@@ -1,0 +1,13 @@
+env,condition,seed,trailing50_return,auc,hp_lam,hp_sigma_mult,hp_epsilon_decay
+MountainCar-v0,zero_shot,0,-192.3,-170.61,0.5,0.35,0.99
+MountainCar-v0,zero_shot,1,-146.98,-172.845,0.5,0.35,0.99
+MountainCar-v0,zero_shot,2,-165.14,-175.095,0.5,0.35,0.99
+MountainCar-v0,tuned,0,-123.26,-138.51,0.3,0.5,0.9
+MountainCar-v0,tuned,1,-121.24,-140.0925,0.3,0.5,0.9
+MountainCar-v0,tuned,2,-121.18,-139.8275,0.3,0.5,0.9
+Acrobot-v1,zero_shot,0,-266.86,-294.5075,0.5,0.35,0.99
+Acrobot-v1,zero_shot,1,-400.3,-294.8875,0.5,0.35,0.99
+Acrobot-v1,zero_shot,2,-233.18,-314.355,0.5,0.35,0.99
+Acrobot-v1,tuned,0,-107.26,-148.7625,0.99,0.5,0.9
+Acrobot-v1,tuned,1,-102.58,-135.2275,0.99,0.5,0.9
+Acrobot-v1,tuned,2,-99.64,-134.8825,0.99,0.5,0.9

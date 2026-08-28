@@ -1,0 +1,29 @@
+condition_a,condition_b,wilcoxon_statistic,p_value_raw,p_value_holm,significant_holm_0.05
+Off / Off / Off (baseline FQL),Off / Off / On,2.0,0.75,1.0,False
+Off / Off / Off (baseline FQL),Off / On / Off,3.0,1.0,1.0,False
+Off / Off / Off (baseline FQL),Off / On / On,0.0,0.25,1.0,False
+Off / Off / Off (baseline FQL),On / Off / Off,0.0,0.25,1.0,False
+Off / Off / Off (baseline FQL),On / Off / On,0.0,0.25,1.0,False
+Off / Off / Off (baseline FQL),On / On / Off,0.0,0.25,1.0,False
+Off / Off / Off (baseline FQL),On / On / On (full FQL-GTA),0.0,0.25,1.0,False
+Off / Off / On,Off / On / Off,0.0,0.25,1.0,False
+Off / Off / On,Off / On / On,0.0,0.25,1.0,False
+Off / Off / On,On / Off / Off,2.0,0.75,1.0,False
+Off / Off / On,On / Off / On,1.0,0.5,1.0,False
+Off / Off / On,On / On / Off,0.0,0.25,1.0,False
+Off / Off / On,On / On / On (full FQL-GTA),0.0,0.25,1.0,False
+Off / On / Off,Off / On / On,0.0,0.25,1.0,False
+Off / On / Off,On / Off / Off,0.0,0.25,1.0,False
+Off / On / Off,On / Off / On,0.0,0.25,1.0,False
+Off / On / Off,On / On / Off,0.0,0.25,1.0,False
+Off / On / Off,On / On / On (full FQL-GTA),0.0,0.25,1.0,False
+Off / On / On,On / Off / Off,1.0,0.5,1.0,False
+Off / On / On,On / Off / On,0.0,0.25,1.0,False
+Off / On / On,On / On / Off,1.0,0.5,1.0,False
+Off / On / On,On / On / On (full FQL-GTA),0.0,0.25,1.0,False
+On / Off / Off,On / Off / On,2.0,0.75,1.0,False
+On / Off / Off,On / On / Off,0.0,0.25,1.0,False
+On / Off / Off,On / On / On (full FQL-GTA),0.0,0.25,1.0,False
+On / Off / On,On / On / Off,0.0,0.25,1.0,False
+On / Off / On,On / On / On (full FQL-GTA),0.0,0.25,1.0,False
+On / On / Off,On / On / On (full FQL-GTA),0.0,0.25,1.0,False

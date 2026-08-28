@@ -1,0 +1,7 @@
+{
+  "r_squared": 0.9458557426907362,
+  "residual_sum_sq": 25292.533600000013,
+  "residual_df": 16.0,
+  "n_observations": 24,
+  "response_variable": "trailing50_return"
+}

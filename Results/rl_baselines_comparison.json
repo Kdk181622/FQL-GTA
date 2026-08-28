@@ -1,0 +1,72 @@
+{
+  "Baseline FQL": {
+    "final_return_mean": 271.65200000000004,
+    "final_return_std": 29.436844939633055,
+    "auc_mean": 123.89580000000001,
+    "auc_std": 11.558222602689971,
+    "solved_rate": 0.0,
+    "n_seeds_solved": 0,
+    "n_seeds_total": 10,
+    "train_time_sec_mean": 13.514276599884033,
+    "train_time_sec_std": 1.3275824346097918,
+    "n_params": 648,
+    "n_episodes_per_seed_mean": 500.0,
+    "memory_kb": 2.53
+  },
+  "Improved FQL-GTA": {
+    "final_return_mean": 429.3179999999999,
+    "final_return_std": 85.25862690791017,
+    "auc_mean": 298.734,
+    "auc_std": 62.82044442164775,
+    "solved_rate": 0.6,
+    "n_seeds_solved": 6,
+    "n_seeds_total": 10,
+    "train_time_sec_mean": 35.79327650070191,
+    "train_time_sec_std": 9.826611050536027,
+    "n_params": 648,
+    "n_episodes_per_seed_mean": 500.0,
+    "memory_kb": 2.53
+  },
+  "DQN (hand-rolled)": {
+    "final_return_mean": 194.32999999999998,
+    "final_return_std": 77.31135391677243,
+    "auc_mean": 110.52619999999999,
+    "auc_std": 17.290578100996704,
+    "solved_rate": 0.0,
+    "n_seeds_solved": 0,
+    "n_seeds_total": 10,
+    "train_time_sec_mean": 173.9114428281784,
+    "train_time_sec_std": 31.80652343639651,
+    "n_params": 4610,
+    "n_episodes_per_seed_mean": 500.0,
+    "memory_kb": 18.01
+  },
+  "DQN (stable-baselines3)": {
+    "final_return_mean": 184.946,
+    "final_return_std": 77.37938746490855,
+    "auc_mean": 23.453388878763832,
+    "auc_std": 10.146221114653885,
+    "solved_rate": 0.0,
+    "n_seeds_solved": 0,
+    "n_seeds_total": 10,
+    "train_time_sec_mean": 154.7393786907196,
+    "train_time_sec_std": 10.73447545823633,
+    "n_params": 9220,
+    "n_episodes_per_seed_mean": 2913.4,
+    "memory_kb": 36.02
+  },
+  "PPO (stable-baselines3)": {
+    "final_return_mean": 496.62199999999996,
+    "final_return_std": 8.410017571655573,
+    "auc_mean": 159.05046029343265,
+    "auc_std": 4.137936700393957,
+    "solved_rate": 0.9,
+    "n_seeds_solved": 9,
+    "n_seeds_total": 10,
+    "train_time_sec_mean": 157.1695857524872,
+    "train_time_sec_std": 35.17434421898793,
+    "n_params": 9155,
+    "n_episodes_per_seed_mean": 385.1,
+    "memory_kb": 35.76
+  }
+}

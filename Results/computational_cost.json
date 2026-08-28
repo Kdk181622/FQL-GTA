@@ -1,0 +1,41 @@
+{
+  "episodes_per_run": 500,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "baseline": {
+    "n_rules": 324,
+    "n_actions": 2,
+    "trainable_params_theta": 648,
+    "runtime_memory_params_total": 648,
+    "per_seed_train_time_sec": [
+      13.732936499989592,
+      13.716124100028537,
+      14.555218999972567
+    ],
+    "mean_train_time_sec": 14.001426533330232,
+    "std_train_time_sec": 0.39165055536831467,
+    "mean_time_per_episode_ms": 28.002853066660464,
+    "per_step_update_complexity": "O(K) -- updates one action-column of theta"
+  },
+  "improved_fql_gta": {
+    "n_rules": 324,
+    "n_actions": 2,
+    "trainable_params_theta": 648,
+    "eligibility_trace_params": 648,
+    "runtime_memory_params_total": 1296,
+    "per_seed_train_time_sec": [
+      49.9085730999941,
+      37.02336160000414,
+      31.005761499982327
+    ],
+    "mean_train_time_sec": 39.312565399993524,
+    "std_train_time_sec": 7.8849820175148695,
+    "mean_time_per_episode_ms": 78.62513079998705,
+    "per_step_update_complexity": "O(K*A) -- Q(lambda) update touches the full trace matrix"
+  },
+  "time_overhead_pct": 180.77542889226626,
+  "memory_overhead_pct": 100.0
+}

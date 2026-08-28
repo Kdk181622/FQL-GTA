@@ -1,0 +1,7 @@
+# Intermediate/regenerable artifacts -- not part of the reproducibility package
+Supplementary/cloned_narration/
+Supplementary/slides_img/
+temp_video_build*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

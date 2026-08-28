@@ -1,0 +1,33 @@
+{
+  "alphas_tested": [
+    0.1,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "n_seeds": 30,
+  "episodes_per_seed": 500,
+  "best_tuned_alpha": 0.5,
+  "canonical_alpha": 0.3,
+  "gta_alpha": 0.2,
+  "tuned_vs_gta": {
+    "tuned_alpha": 0.5,
+    "tuned_final_return_mean": 275.47,
+    "tuned_final_return_std": 27.970241698806525,
+    "gta_final_return_mean": 423.07733333333334,
+    "gta_final_return_std": 78.67067327805825,
+    "cohens_d": 2.5001302963886047,
+    "wilcoxon_statistic": 8.0,
+    "wilcoxon_p_value": 4.6566128730773926e-08
+  },
+  "canonical_vs_gta": {
+    "canonical_alpha": 0.3,
+    "canonical_final_return_mean": 265.6986666666667,
+    "canonical_final_return_std": 41.17252982212804,
+    "gta_final_return_mean": 423.07733333333334,
+    "gta_final_return_std": 78.67067327805825,
+    "cohens_d": 2.5065744567744006,
+    "wilcoxon_statistic": 7.0,
+    "wilcoxon_p_value": 3.5390257835388184e-08
+  }
+}
