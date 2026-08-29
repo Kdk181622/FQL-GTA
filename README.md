@@ -182,6 +182,7 @@ checkout.
 
 The source code, configuration files, and experiment scripts used to generate every reported
 result are included in full in `Code/` and are exactly reproducible via the commands above.
+The full repository is also published on GitHub: **https://github.com/Kdk181622/FQL-GTA**.
 
 ## Citation
 
