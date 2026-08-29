@@ -13,7 +13,7 @@ CartPole-v1.
 | Video recording (8–12 minutes) | ✅ Done — 11:24 | `Supplementary/FQL-GTA_Presentation_Video.mp4` |
 | GitHub repository link | ✅ Done | **https://github.com/Kdk181622/FQL-GTA** |
 | LinkedIn post link | ⭕ Optional ("if done") — not created | — |
-| Zipped folder submission | ✅ Done | `../../missed out assignment 1/Assignment_1_FQL-GTA_28-08-2026.zip` |
+| Zipped folder submission | ✅ Done | `../../FINAL_29-08-2026 assignment 1/Assignment_1_FQL-GTA_29-08-2026.zip` |
 
 ## Still outstanding (needs the author's own accounts/access, not automatable)
 
@@ -21,4 +21,4 @@ CartPole-v1.
 - **Base paper PDF (Jouffe, 1998)** — IEEE-copyrighted; no legitimate open-access copy found. Needs REVA library / IEEE Xplore access.
 - **YouTube upload of the video** *(if the target LMS also expects one for this part; Part 2's own list does not, but keeping this noted for consistency with Part 1)* — needs the author's YouTube account.
 
-See `../../missed out assignment 1/MISSED_OUT_REPORT.md` for the full gap analysis this was derived from.
+See `../../FINAL_29-08-2026 assignment 1/FINAL_29-08-2026_REPORT.md` for the full gap analysis this was derived from.
